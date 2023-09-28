@@ -107,5 +107,41 @@ int main() {
 		cout << i++ << endl;;
 	} while(i<10);
 	
+	// Arrays
+	// similar to python, but small differences.
+	int prices[5] = {1,2,3,4,5};
+	cout << "Prices 2: " << prices[2] << endl;
+	prices[2] = 5.6f;
+	cout << "Prices 2: " << prices[2] << endl;
+	
+	int values[5];
+	values[0] = 5;
+	//values[1] = 2;
+	//values[2] = 10;
+	//values[3] = 100;
+	//values[4] = 10000;
+	
+	cout << "Values 4: " << values[4] << endl;
+	
+	// Strings
+	// c++ has a string class, old C has not.
+	string s = "Hello world";
+	string t = "Hello universe";
+	cout << s << endl;
+	cout << t << endl;
+	string u = s+t;
+	cout << u << endl;
+	
+	t = s;
+	cout << t << endl;
+	t = "Hi universe";
+	cout << "t: " << t << " s: " << s << endl;
+	
+	cout << " s==t: " << (s == t) << endl;
+	s = "hi";
+	t = "hi";
+	cout << " s==t: " << (s == t) << endl;
+	
+	
 	return 0;
 }
